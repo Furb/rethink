@@ -18,7 +18,7 @@
 
   h1,
   .h1 {
-    @apply text-8xl 2xl:text-[10rem];
+    @apply text-6xl 2xl:text-[8rem];
   }
 
   h2,
@@ -55,7 +55,7 @@
   }
 
   .wrap {
-    @apply px-24 2xl:px-48;
+    @apply px-4 md:px-24 2xl:px-48;
   }
 
   .custom-space {

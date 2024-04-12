@@ -21,30 +21,35 @@ export default function Home() {
         </h2>
         <div className='min-h-96 w-96 rounded-xl bg-primary'></div>
       </section>
-      <section className='bg-light rounded-xl py-48 min-h-svh'>
-        <h2 className='px-48 pb-16 font-medium'>
-          Med vores ekspertise skaber <br /> vi events med varig værdi
-        </h2>
-        <Link href='#'>
-          <div className='py-8 px-48 border-b border-primary hover:text-light hover:bg-primary '>
+      <section className='bg-light rounded-xl py-48 wrap custom-space'>
+        <h4 className='font-normal'>Vores ekspertise</h4>
+        <p className='h1 custom-space text-primary'>Events med varig værdi</p>
+        <div className='container'>
+          <Link
+            href='#'
+            className='block py-8 px-24 border-b border-primary hover:text-light hover:bg-primary hover:px-56'
+          >
             <h2>Eventrådgivning</h2>
-          </div>
-        </Link>
-        <Link href='#'>
-          <div className='py-8 px-48 border-b border-primary hover:text-light hover:bg-primary'>
-            <h2>Eventrådgivning</h2>
-          </div>
-        </Link>
-        <Link href='#'>
-          <div className='py-8 px-48 border-b border-primary hover:text-light hover:bg-primary'>
-            <h2>Eventrådgivning</h2>
-          </div>
-        </Link>
-        <Link href='#'>
-          <div className='py-8 px-48 hover:text-light hover:bg-primary'>
-            <h2>Eventrådgivning</h2>
-          </div>
-        </Link>
+          </Link>
+          <Link
+            href='#'
+            className='block py-8 px-24 border-b border-primary hover:text-light hover:bg-primary hover:px-56'
+          >
+            <h2>Eventmanagement</h2>
+          </Link>
+          <Link
+            href='#'
+            className='block py-8 px-24 border-b border-primary hover:text-light hover:bg-primary hover:px-56'
+          >
+            <h2>Undervisning</h2>
+          </Link>
+          <Link
+            href='#'
+            className='block py-8 px-24 border-b border-primary hover:text-light hover:bg-primary hover:px-56'
+          >
+            <h2>Debat & foredrag</h2>
+          </Link>
+        </div>
       </section>
     </main>
   );

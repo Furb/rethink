@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='flex custom-space-small'>
           <h2 className='h1'>
             <span className='italic text-primary line-through'>Fremtidens</span>{" "}
-            gæster skal <br /> have miljøansvarlige <br /> oplevelser.
+            gæster skal have miljøansvarlige oplevelser.
           </h2>
         </div>
         <div className='flex items-end gap-x-24'>
