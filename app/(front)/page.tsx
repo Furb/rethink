@@ -41,7 +41,7 @@ export default function Home() {
             href='#'
             className='block py-8 px-24 border-b border-primary hover:text-light hover:bg-primary hover:px-56'
           >
-            <h2>Undervisning</h2>
+            <h2>Undervisning & facilitering</h2>
           </Link>
           <Link
             href='#'
