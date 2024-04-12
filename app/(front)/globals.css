@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #f04b1d;
+    --color-light: #f7f2e7;
+    --color-dark: #121212;
+    --color-white: #ffffff;
+    --color-grey: #7a7a7a;
+    --color-secondary: #149dcd;
+  }
+
+  body {
+    font-weight: 300;
+  }
+
+  h1,
+  .h1 {
+    @apply text-8xl 2xl:text-[10rem];
+  }
+
+  h2,
+  .h2,
+  p.tema {
+    @apply text-5xl md:text-6xl leading-tight md:leading-[1.3];
+  }
+
+  h3,
+  .h3 {
+    @apply text-2xl xl:text-3xl;
+  }
+
+  h4,
+  .h4 {
+    @apply text-2xl font-normal;
+  }
+
+  .nav-label {
+    @apply text-2xl xl:text-3xl;
+  }
+
+  p {
+    @apply text-xl md:text-2xl;
+  }
+
+  a,
+  button {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .cards picture:nth-child(odd) {
+    @apply md:mt-40 2xl:mt-60;
+  }
+
+  .wrap {
+    @apply px-24 2xl:px-48;
+  }
+
+  .custom-space {
+    @apply mb-24 md:mb-32 2xl:mb-60;
+  }
+
+  .custom-space-small {
+    @apply mb-16 md:mb-24 2xl:mb-32;
+  }
+}
