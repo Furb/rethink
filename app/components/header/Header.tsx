@@ -19,7 +19,7 @@ const Header = () => {
         <NavLinks />
 
         <Link href='#'>
-          <button className='bg-blue text-light rounded-full px-8 py-2'>
+          <button className='bg-secondary text-light rounded-full px-8 py-2'>
             Hiv fat i os
           </button>
         </Link>

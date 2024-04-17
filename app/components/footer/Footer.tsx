@@ -6,7 +6,10 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className='bg-dark pt-48 pb-8 text-white wrap'>
-      <div id='footerTop' className='px-96 custom-space-small'>
+      <div
+        id='footerTop'
+        className='container md:px-[10vw] 3xl:px-96 custom-space-small'
+      >
         <div className='flex custom-space-small'>
           <h2 className='h1'>
             <span className='italic text-primary line-through'>Fremtidens</span>{" "}
@@ -14,7 +17,7 @@ const Footer = () => {
           </h2>
         </div>
         <div className='flex items-end gap-x-24'>
-          <div className='logo text-primary'>
+          <div className='logo text-primary hidden md:block'>
             <Link href='/'>
               <Image
                 src='/rethink_logo_farve.svg'
@@ -51,8 +54,11 @@ const Footer = () => {
         </div>
       </div>
 
-      <div id='bottomFooter' className='w-full flex justify-between'>
-        <nav className='flex gap-24'>
+      <div
+        id='bottomFooter'
+        className='w-full flex gap-8 justify-between container'
+      >
+        <nav className='flex flex-col md:flex-row gap-8 lg:gap-24'>
           <Link href='/forretningsbetingelser'>
             <p className='text-xl hover:text-primary'>Forretningsbetingelser</p>
           </Link>
@@ -64,7 +70,7 @@ const Footer = () => {
             <p className='text-xl hover:text-primary'>Coockies</p>
           </Link>
         </nav>
-        <p className='text-lg'>CVR-NR: 35124616</p>
+        <p className='text-lg self-end'>CVR-NR: 35124616</p>
       </div>
     </footer>
   );

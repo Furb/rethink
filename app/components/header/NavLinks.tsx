@@ -15,16 +15,6 @@ const NavLinks = () => {
       title: "Hvad vi tilbyder",
       path: "/ydelser",
     },
-
-    {
-      title: "Venner",
-      path: "/netvaerk",
-    },
-
-    {
-      title: "Scrapbogen",
-      path: "/scrapbogen",
-    },
   ];
 
   const activelink = usePathname();
