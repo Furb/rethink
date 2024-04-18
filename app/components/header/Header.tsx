@@ -6,7 +6,7 @@ import NavLinks from "./NavLinks";
 const Header = () => {
   return (
     <header className='py-6 wrap bg-white mb-24'>
-      <nav className='flex justify-between items-center w-full'>
+      <nav className='flex justify-between items-center'>
         <Link href='/'>
           <Image
             src='/rethink_logo_farve.svg'

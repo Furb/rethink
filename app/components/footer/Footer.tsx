@@ -6,10 +6,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className='bg-dark pt-48 pb-8 text-white wrap'>
-      <div
-        id='footerTop'
-        className='container md:px-[10vw] 3xl:px-96 custom-space-small'
-      >
+      <div id='footerTop' className='container custom-space-small'>
         <div className='flex custom-space-small'>
           <h2 className='h1'>
             <span className='italic text-primary line-through'>Fremtidens</span>{" "}
