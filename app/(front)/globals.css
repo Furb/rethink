@@ -18,7 +18,7 @@
 
   h1,
   .h1 {
-    @apply text-6xl 2xl:text-[8rem];
+    @apply text-4xl md:text-6xl 2xl:text-[7.5rem] leading-snug 2xl:leading-[1.4];
   }
 
   h2,
@@ -48,6 +48,18 @@
   a,
   button {
     @apply transition-all duration-300 ease-in-out;
+  }
+
+  .richText {
+    @apply max-w-xl;
+  }
+
+  .richText p {
+    @apply mb-6;
+  }
+
+  .richText strong {
+    @apply mb-4 block;
   }
 
   .cards picture:nth-child(odd) {

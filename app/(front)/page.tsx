@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Casegrid from "../components/cards/Casegrid";
+import Casegrid from "./components/cards/Casegrid";
 import Image from "next/image";
 
 export default function Home() {

@@ -1,17 +1,13 @@
-import { ArrowRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
-import Link from "next/link";
 import { client } from "@/sanity/lib/client";
 import { Ydelse } from "../utils/interface";
-import YdelseExcpert from "@/app/components/ydelse/YdelseExcpert";
+import YdelseExcpert from "../components/ydelse/YdelseExcpert";
 
-async function getYdelser() {
-  const query = `*[_type == "ydelser"]{
-title,slug,excerpt}`;
-
+const getYdelser = async () => {
+  const query = `*[_type == "ydelser"]{title, slug, excerpt, body, undertitle}`;
   const data = await client.fetch(query);
   return data;
-}
+};
 
 const Ydelser = async () => {
   const ydelser: Ydelse[] = await getYdelser();
@@ -51,7 +47,7 @@ const Ydelser = async () => {
       </div>
 
       <div className='grid sm:grid-cols-8 gap-8 2xl:gap-24'>
-        <div className='col-span-6'>
+        <div className='col-span-4'>
           {ydelser?.length > 0 &&
             ydelser?.map((ydelse) => (
               <YdelseExcpert ydelse={ydelse} key={ydelse._id} />

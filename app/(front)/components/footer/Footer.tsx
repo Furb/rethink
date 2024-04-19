@@ -30,10 +30,18 @@ const Footer = () => {
                 <p className='h3 leading-normal'>+45 27 12 61 39</p>
               </li>
               <li>
-                <p className='h3 leading-normal'>info@rethinkevent.dk</p>
+                <Link href={"mailto:info@rethinkevent.dk"}>
+                  <p className='h3 leading-normal hover:text-primary'>
+                    info@rethinkevent.dk
+                  </p>
+                </Link>
               </li>
               <li>
-                <p className='h3 leading-normal'>Linkedin</p>
+                <Link href={"https://www.linkedin.com/company/rethink-event/"}>
+                  <p className='h3 leading-normal hover:text-primary'>
+                    Linkedin
+                  </p>
+                </Link>
               </li>
             </ul>
             <ul>

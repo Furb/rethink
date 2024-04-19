@@ -4,13 +4,12 @@ import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
 
-const NavLinks = () => {
+const NavLinks = ({ menu }: { menu: string }) => {
   const navlinks = [
     {
       title: "Hvad har vi lavet",
       path: "/cases",
     },
-
     {
       title: "Hvad vi tilbyder",
       path: "/ydelser",
@@ -20,13 +19,15 @@ const NavLinks = () => {
   const activelink = usePathname();
 
   return (
-    <nav className='flex gap-x-16 text-xl font-normal'>
+    <div
+      className={`${menu} flex flex-col lg:flex-row gap-x-16 text-xl font-normal pt-[10vh] pb-16`}
+    >
       {navlinks.map((navlink) => (
-        <Link href={navlink.path} key={navlink.title}>
+        <Link href={navlink.path} key={navlink.title} className='mb-4'>
           <p
-            className={`py-2 px-4 text-[1.125rem] hover:bg-light  hover:py-2 rounded-full ${
+            className={`py-2 px-4 text-2xl font-light lg:text-[1.125rem] lg:font-normal  ${
               activelink === navlink.path
-                ? "bg-secondary text-white py-2 rounded-full"
+                ? "bg-light text-dark py-2 rounded-full"
                 : ""
             }`}
           >
@@ -34,7 +35,7 @@ const NavLinks = () => {
           </p>
         </Link>
       ))}
-    </nav>
+    </div>
   );
 };
 

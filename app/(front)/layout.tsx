@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "../components/header/Header";
-import Footer from "../components/footer/Footer";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 import { satoshi } from "./utils/customFonts";
 export const metadata: Metadata = {
   title: "Rethink Event",
