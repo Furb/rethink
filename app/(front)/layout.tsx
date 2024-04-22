@@ -16,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang='en' className={satoshi.variable}>
       <body className='h-screen font-satoshi'>
+        <Header />
         {children}
         <Footer />
       </body>

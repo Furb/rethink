@@ -7,10 +7,6 @@ import { usePathname } from "next/navigation";
 const NavLinks = ({ menu }: { menu: string }) => {
   const navlinks = [
     {
-      title: "Hvad har vi lavet",
-      path: "/cases",
-    },
-    {
       title: "Hvad vi tilbyder",
       path: "/ydelser",
     },
