@@ -17,15 +17,14 @@ const getYdelse = async (slug: string) => {
 
 const singleYdelse = async ({ params }: Params) => {
   const ydelse: Ydelse = await getYdelse(params?.slug);
-  
 
   return (
     <main className='wrap'>
-      <div className='flex items-center justify-center h-[60vh]'>
-        <h1>{ydelse?.title}</h1>
+      <div>
+        <p className='text-primary'>{ydelse?.title}</p>
       </div>
 
-      <section className='richText container max-w-3xl custom-space'>
+      <section className='richText max-w-3xl custom-space'>
         <h2 className='mb-16'>{ydelse?.undertitle}</h2>
         <PortableText value={ydelse?.body} />
       </section>

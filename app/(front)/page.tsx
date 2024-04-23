@@ -41,35 +41,35 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className='bg-light rounded-xl py-48 wrap custom-space-small'>
-        <h4 className='font-normal'>Vores ekspertise er</h4>
-        <p className='h1 custom-space-small text-primary'>
-          Events med varig værdi
-        </p>
-        <div className='container'>
+      <section className='bg-light rounded-xl py-24 wrap custom-space-small'>
+        <h4 className='font-bold mb-8'>
+          Vores ekspertise er events med varig værdi
+        </h4>
+
+        <div className='group'>
           <Link
             href='ydelser/eventradgivning'
-            className='block py-8 px-8 md:px-24 border-b border-primary hover:text-light hover:bg-primary 2xl:hover:px-36'
+            className='block py-4 md:py-8 md:px-24 border-b border-primary hover:text-light hover:bg-primary 2xl:hover:px-36'
           >
-            <h2>Eventrådgivning</h2>
+            <h3>Eventrådgivning</h3>
           </Link>
           <Link
             href='ydelser/eventmanagement'
-            className='block py-8 px-8 md:px-24 border-b border-primary hover:text-light hover:bg-primary 2xl:hover:px-36'
+            className='block py-4 md:py-8 md:px-24 border-b border-primary hover:text-light hover:bg-primary 2xl:hover:px-36'
           >
-            <h2>Eventmanagement</h2>
+            <h3>Eventmanagement</h3>
           </Link>
           <Link
             href='ydelser/undervisning-and-facilitering'
-            className='block py-8 px-8 md:px-24 border-b border-primary hover:text-light hover:bg-primary 2xl:hover:px-36'
+            className='block py-4 md:py-8 md:px-24 border-b border-primary hover:text-light hover:bg-primary 2xl:hover:px-36'
           >
-            <h2>Undervisning & facilitering</h2>
+            <h3>Undervisning & facilitering</h3>
           </Link>
           <Link
             href='ydelser/debat-and-foredrag'
-            className='block py-8 px-8 md:px-24 border-b border-primary hover:text-light hover:bg-primary 2xl:hover:px-36'
+            className='block py-4 md:py-8 md:px-24 border-b border-primary hover:text-light hover:bg-primary 2xl:hover:px-36'
           >
-            <h2>Debat & foredrag</h2>
+            <h3>Debat & foredrag</h3>
           </Link>
         </div>
       </section>

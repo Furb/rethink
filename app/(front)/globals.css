@@ -18,7 +18,8 @@
 
   h1,
   .h1 {
-    @apply text-4xl md:text-6xl 2xl:text-[7.5rem] leading-snug 2xl:leading-[1.4];
+    font-size: clamp(2.25rem, 7vw + 1rem, 7.5rem);
+    @apply leading-snug 2xl:leading-[1.4];
   }
 
   h2,
