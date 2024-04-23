@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className='bg-dark pt-48 pb-8 text-white wrap'>
+    <footer className='bg-dark pt-24 md:pt-48 pb-8 text-white wrap'>
       <div id='footerTop' className='container custom-space-small'>
         <div className='flex custom-space-small'>
           <h2 className='h1'>
