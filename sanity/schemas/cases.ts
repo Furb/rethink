@@ -28,11 +28,7 @@ export const cases = {
       },
       validation: (Rule: Rule) => Rule.required().error("Slug er påkrævet"),
     },
-    {
-      name: "firma",
-      title: "Firma",
-      type: "string",
-    },
+
     {
       name: "excerpt",
       title: "Experpt",
