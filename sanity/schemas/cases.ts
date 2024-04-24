@@ -36,7 +36,7 @@ export const cases = {
     },
 
     {
-      name: "image",
+      name: "mainImage",
       title: "Main Billede",
       type: "image",
       fields: [

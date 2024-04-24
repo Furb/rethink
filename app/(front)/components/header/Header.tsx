@@ -20,13 +20,15 @@ const Header = () => {
             alt='logo'
           />
         </Link>
-        <NavLinks
-          menu={
-            isOpen
-              ? "absolute top-24 left-0 right-0 bottom-0 bg-light bg-opacity-50"
-              : "hidden lg:flex"
-          }
-        />
+        <div className='hidden'>
+          <NavLinks
+            menu={
+              isOpen
+                ? "absolute top-24 left-0 right-0 bottom-0 bg-light bg-opacity-50"
+                : "hidden lg:flex"
+            }
+          />
+        </div>
 
         <Link href='#footerTop' className='hidden lg:block'>
           <button className=' bg-secondary text-light rounded-full px-8 py-2'>

@@ -3,7 +3,7 @@ import { client } from "@/sanity/lib/client";
 import { Case } from "../../utils/interface";
 
 const getCases = async () => {
-  const query = `*[_type == "cases"]{title, slug, excerpt}`;
+  const query = `*[_type == "cases"]{_id, title, slug, undertitle, image}`;
   const data = await client.fetch(query);
   return data;
 };

@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main className='wrap'>
       <div className='mb-4'>
-        <p>Rethink Event er </p>
+        <p className='text-primary'>Rethink Event </p>
         <h1>People. Planet. Profit.</h1>
       </div>
       <div
@@ -15,6 +15,7 @@ export default function Home() {
       >
         <Image src='/hero1.jpg' fill alt='debatpanel' className='rounded-xl' />
       </div>
+      <Casegrid />
       <section className='grid grid-cols-1 md:grid-cols-8 gap-16 custom-space'>
         <div className='md:col-span-4 2xl:col-span-5'>
           <h2 className='custom-space-small'>
@@ -26,18 +27,18 @@ export default function Home() {
             dagens handlinger og bidrager til et bedre i morgen.
           </h2>
           <Link href='/ydelser'>
-            <button className='bg-secondary border-2 border-secondary text-light rounded-full px-8 py-4 font-normal text-[1.125rem] hover:bg-white hover:text-primary hover:border-primary '>
+            <button className='bg-primary border-2 border-primary text-light rounded-full px-8 py-4 font-normal text-[1.125rem] hover:bg-white hover:text-primary'>
               Se hvad vi kan gøre for jer
             </button>
           </Link>
         </div>
 
-        <div className='image aspect-square w-96 rounded-xl bg-primary'>
+        <div className='relative aspect-square w-96 rounded-xl bg-primary'>
           <Image
             src='/talks.jpg'
             fill
             alt='debatpanel'
-            className='rounded-xl'
+            className='rounded-xl object-cover'
           />
         </div>
       </section>
