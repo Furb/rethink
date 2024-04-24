@@ -13,6 +13,13 @@ export const cases = {
       validation: (Rule: Rule) => Rule.required().error("Titlen er påkrævet"),
     },
     {
+      name: "undertitle",
+      title: "Under titel",
+      type: "string",
+      validation: (Rule: Rule) =>
+        Rule.required().error("Under titlen er påkrævet"),
+    },
+    {
       name: "slug",
       title: "Slug",
       type: "slug",
@@ -46,8 +53,44 @@ export const cases = {
     },
 
     {
-      name: "body",
-      title: "Body",
+      name: "formaal",
+      title: "Formål",
+      type: "array",
+      of: [
+        { type: "block" },
+        {
+          type: "image",
+          fields: [
+            {
+              type: "text",
+              name: "alt",
+              title: "Alt",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: "loesning",
+      title: "Løsning",
+      type: "array",
+      of: [
+        { type: "block" },
+        {
+          type: "image",
+          fields: [
+            {
+              type: "text",
+              name: "alt",
+              title: "Alt",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      name: "resultat",
+      title: "Resultat",
       type: "array",
       of: [
         { type: "block" },

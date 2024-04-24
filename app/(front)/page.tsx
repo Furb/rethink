@@ -5,42 +5,43 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className='wrap'>
-      <div className='custom-space-small'>
-        <h1>
-          Rethink Event - Er iøjeblikket ifærd med at bygge webisitet op med ny
-          visuel identitet.
-        </h1>
+      <div className='mb-4'>
+        <p>Rethink Event er </p>
+        <h1>People. Planet. Profit.</h1>
       </div>
-
-      <div className='hidden image aspect-video custom-space md:mb-36 rounded-xl bg-primary'>
-        <Image
-          src='/hero1.jpg'
-          fill
-          alt='debatpanel'
-          sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-          className='rounded-xl'
-        />
+      <div
+        className=' 
+      image aspect-video custom-space md:mb-36 rounded-xl bg-primary'
+      >
+        <Image src='/hero1.jpg' fill alt='debatpanel' className='rounded-xl' />
       </div>
-
       <section className='grid grid-cols-1 md:grid-cols-8 gap-16 custom-space'>
-        <h2 className='md:col-span-4 2xl:col-span-5'>
-          Vi er et eventbureau, som arbejder for at skabe events, der gør en
-          positiv forskel i verden. Relationelt. Miljømæssigt. Økonomisk.
-          <br />
-          <br />
-          Med en praktisk tilgang forvandler vi fremtidens nødvendigheder til
-          dagens handlinger og bidrager til et bedre i morgen.
-        </h2>
-        <div className='image w-96 rounded-xl bg-primary place-self-stretch'>
+        <div className='md:col-span-4 2xl:col-span-5'>
+          <h2 className='custom-space-small'>
+            Vi er et eventbureau, som arbejder for at skabe events, der gør en
+            positiv forskel i verden. Relationelt. Miljømæssigt. Økonomisk.
+            <br />
+            <br />
+            Med en praktisk tilgang forvandler vi fremtidens nødvendigheder til
+            dagens handlinger og bidrager til et bedre i morgen.
+          </h2>
+          <Link href='/ydelser'>
+            <button className='bg-secondary border-2 border-secondary text-light rounded-full px-8 py-4 font-normal text-[1.125rem] hover:bg-white hover:text-primary hover:border-primary '>
+              Se hvad vi kan gøre for jer
+            </button>
+          </Link>
+        </div>
+
+        <div className='image aspect-square w-96 rounded-xl bg-primary'>
           <Image
             src='/talks.jpg'
             fill
-            sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
             alt='debatpanel'
             className='rounded-xl'
           />
         </div>
       </section>
+
       <section className='bg-light rounded-xl py-24 wrap custom-space-small'>
         <h4 className='font-bold mb-8'>
           Vores ekspertise er events med varig værdi
