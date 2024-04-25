@@ -30,16 +30,19 @@ const Header = () => {
           />
         </div>
 
-        <Link href='#footerTop' className='hidden lg:block'>
-          <button className=' bg-secondary text-light rounded-full px-8 py-2'>
-            Hiv fat i os
+        <Link href='#footerTop'>
+          <button className='rounded-full px-8 py-2'>
+            <p className='text-2xl lg:text-[1.125rem] font-normal hover:'>
+              {" "}
+              Kontakt
+            </p>
           </button>
         </Link>
 
         <Link
           href='#'
           onClick={() => setIsOpen(!isOpen)}
-          className='lg:hidden menu-icon text-primary'
+          className='hidden menu-icon text-primary'
         >
           {isOpen ? (
             <XMarkIcon className='h-8' />

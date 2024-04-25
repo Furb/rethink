@@ -18,7 +18,7 @@ export interface Case {
     current: string;
   };
   excerpt: string;
-  image: {
+  mainImage: {
     asset: any;
     alt: string;
   };

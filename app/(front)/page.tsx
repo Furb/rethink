@@ -13,10 +13,15 @@ export default function Home() {
         className=' 
       image aspect-video custom-space md:mb-36 rounded-xl bg-primary'
       >
-        <Image src='/hero1.jpg' fill alt='debatpanel' className='rounded-xl' />
+        <Image
+          src='/deco1.jpg'
+          fill
+          alt='dekoration til fest'
+          className='rounded-xl'
+        />
       </div>
-      <Casegrid />
-      <section className='grid grid-cols-1 md:grid-cols-8 gap-16 custom-space'>
+
+      <section className='grid grid-cols-1 md:grid-cols-8 gap-16 max-md:mb-4 md:custom-space'>
         <div className='md:col-span-4 2xl:col-span-5'>
           <h2 className='custom-space-small'>
             Vi er et eventbureau, som arbejder for at skabe events, der gør en
@@ -33,7 +38,7 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className='relative aspect-square w-96 rounded-xl bg-primary'>
+        <div className='relative aspect-square max-md:w-full md:w-96 rounded-xl bg-primary'>
           <Image
             src='/talks.jpg'
             fill
@@ -43,7 +48,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='bg-light rounded-xl py-24 wrap custom-space-small'>
+      <section className='bg-light rounded-xl py-24 wrap max-md:mb-4 md:custom-space-small'>
         <h4 className='font-bold mb-8'>
           Vores ekspertise er events med varig værdi
         </h4>
