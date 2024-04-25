@@ -32,10 +32,7 @@ const Header = () => {
 
         <Link href='#footerTop'>
           <button className='rounded-full px-8 py-2'>
-            <p className='text-2xl lg:text-[1.125rem] font-normal hover:'>
-              {" "}
-              Kontakt
-            </p>
+            <p className='text-2xl font-normal hover:'> Kontakt</p>
           </button>
         </Link>
 

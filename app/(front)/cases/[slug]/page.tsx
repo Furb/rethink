@@ -9,7 +9,7 @@ interface Params {
 }
 
 const getCase = async (slug: string) => {
-  const query = `*[_type == "cases" && slug.current == "${slug}"][0]{title, slug, body, undertitle}`;
+  const query = `*[_type == "cases" && slug.current == "${slug}"][0]{title, slug, undertitle}`;
 
   const caseItem = await client.fetch(query);
   return caseItem;
