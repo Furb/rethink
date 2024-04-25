@@ -14,36 +14,27 @@ const Ydelser = async () => {
   console.log(ydelser);
   return (
     <main className='wrap'>
-      <div className='custom-space-small col-span-full'>
-        <h1>
-          Som din eventpartner{" "}
+      <div className='custom-space-small'>
+        <h1>Som din eventpartner</h1>
+        <h2>
           <span className='text-primary'>
             {" "}
-            tilbyder vi omfattende rådgivning og planlægning af events
+            Tilbyder vi omfattende rådgivning og planlægning af events
           </span>{" "}
           så du kan fokusere på det vigtigste - dine deltagere og dit budskab
-        </h1>
+        </h2>
+      </div>
 
-        <div className='hidden gap-4 md:gap-8 flex-col md:flex-row'>
-          <div className='image aspect-video custom-space md:mb-36 rounded-xl bg-primary'>
-            <Image
-              src='/deco1.jpg'
-              fill
-              alt='eventsetting'
-              sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-              className='rounded-xl'
-            />
-          </div>
-          <div className='image aspect-video custom-space md:mb-36 rounded-xl bg-primary'>
-            <Image
-              src='/deco1.jpg'
-              fill
-              alt='eventsetting'
-              sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
-              className='rounded-xl'
-            />
-          </div>
-        </div>
+      <div
+        className=' 
+      image aspect-video custom-space md:mb-36 rounded-xl bg-primary'
+      >
+        <Image
+          src='/hero1.jpg'
+          fill
+          alt='dekoration til fest'
+          className='rounded-xl'
+        />
       </div>
 
       <div className='grid sm:grid-cols-8 gap-8 2xl:gap-24'>
