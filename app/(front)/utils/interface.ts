@@ -32,6 +32,26 @@ export interface Case {
   _id: string;
 }
 
+export interface Projekt {
+  title: string;
+  slug: {
+    current: string;
+  };
+  excerpt: string;
+  mainImage: {
+    asset: any;
+    alt: string;
+  };
+  formaal: string;
+  loesning: string;
+  resultat: string;
+
+  kategorier: Array<Kategori>;
+  undertitle: string;
+  body: any;
+  _id: string;
+}
+
 export interface Kategori {
   title: string;
   slug: { current: string };
