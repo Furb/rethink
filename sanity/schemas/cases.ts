@@ -28,6 +28,18 @@ export const cases = {
       },
       validation: (Rule: Rule) => Rule.required().error("Slug er påkrævet"),
     },
+    {
+      name: "featuredImage",
+      title: "Udvalgt Billede",
+      type: "image",
+      fields: [
+        {
+          type: "string",
+          name: "alt",
+          title: "Alt",
+        },
+      ],
+    },
 
     {
       name: "excerpt",
