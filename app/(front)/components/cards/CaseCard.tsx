@@ -11,11 +11,21 @@ interface CaseCardProps {
 
 const CaseCard = ({ case: caseData }: CaseCardProps) => {
   return (
-    <Link href={`/cases/${caseData?.slug?.current}`}>
-      <div className='hidden h-[400px] relative rounded-xl mb-8'></div>
-      <div className='bg-light rounded-xl py-8 px-8 hover:bg-primary hover:text-white'>
-        <h4 className='mb-2'>{caseData?.title}</h4>
-        <p className='max-w-3xl'>{caseData?.undertitle}</p>
+    <Link href={`/cases/${caseData?.slug?.current}`} className='card group'>
+      <div className='group-hover:translate-y-3 transition-all duration-200'>
+        <div className='h-[400px] bg-primary relative rounded-t-xl '>
+          <Image
+            src={caseData?.image.asset?.url}
+            alt={caseData?.title}
+            layout='fill'
+            objectFit='cover'
+            className='rounded-t-xl'
+          />
+        </div>
+        <div className='pt-8 pb-12 px-8 bg-white shadow-md group-hover:shadow-xl rounded-b-xl'>
+          <p className='mb-2'>{caseData?.title}</p>
+          <h4 className='max-w-3xl'>{caseData?.undertitle}</h4>
+        </div>
       </div>
     </Link>
   );

@@ -67,6 +67,10 @@
     @apply md:mt-40 2xl:mt-60;
   }
 
+  .casegrid .card:nth-child(even) {
+    @apply md:mt-40 2xl:mt-60;
+  }
+
   .wrap {
     @apply px-4 md:px-24 2xl:px-48;
   }

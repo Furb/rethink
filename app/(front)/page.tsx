@@ -7,7 +7,7 @@ export default function Home() {
     <main className='wrap'>
       <div className='custom-space-small'>
         <p className='text-primary'>Rethink Event </p>
-        <h1>People. Planet. Profit.</h1>
+        <h1>Cirkulære forretningsmodeller</h1>
       </div>
       <div
         className=' 
@@ -20,9 +20,10 @@ export default function Home() {
           className='rounded-xl'
         />
       </div>
+      <Casegrid limit={2} orderBy={"desc"} />
 
       <section className='grid grid-cols-1 md:grid-cols-8 gap-16 max-md:mb-4 md:custom-space'>
-        <div className='md:col-span-4 2xl:col-span-5'>
+        <div className='max-md:custom-space md:col-span-4 2xl:col-span-5'>
           <h2 className='custom-space-small'>
             Vi er et eventbureau, som arbejder for at skabe events, der gør en
             positiv forskel i verden. Relationelt. Miljømæssigt. Økonomisk.
