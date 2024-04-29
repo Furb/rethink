@@ -15,11 +15,6 @@ const NavLinks = ({ menu }: { menu: string }) => {
       title: "Hvad vi har lavet",
       path: "/cases",
     },
-
-    {
-      title: "Kontakt",
-      path: "/",
-    },
   ];
 
   const activelink = usePathname();

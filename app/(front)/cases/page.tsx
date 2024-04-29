@@ -5,7 +5,6 @@ const cases = async () => {
   return (
     <main className='wrap md:grid grid-cols-8'>
       <div className='custom-space col-span-full'>
-        <p>Cases</p>
         <h1 className='text-primary'>
           Events med grønne <br /> kvalitative løsninger
         </h1>
