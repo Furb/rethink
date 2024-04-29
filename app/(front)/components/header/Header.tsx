@@ -20,26 +20,19 @@ const Header = () => {
             alt='logo'
           />
         </Link>
-        <div className='hidden'>
-          <NavLinks
-            menu={
-              isOpen
-                ? "absolute top-24 left-0 right-0 bottom-0 bg-light bg-opacity-50"
-                : "hidden lg:flex"
-            }
-          />
-        </div>
 
-        <Link href='#footerTop'>
-          <button className='rounded-full px-8 py-2'>
-            <p className='text-2xl font-normal hover:'> Kontakt</p>
-          </button>
-        </Link>
+        <NavLinks
+          menu={
+            isOpen
+              ? "absolute top-24 left-0 right-0 bottom-0 bg-light bg-opacity-50"
+              : "hidden lg:flex"
+          }
+        />
 
         <Link
           href='#'
           onClick={() => setIsOpen(!isOpen)}
-          className='hidden menu-icon text-primary'
+          className='lg:hidden menu-icon text-primary'
         >
           {isOpen ? (
             <XMarkIcon className='h-8' />

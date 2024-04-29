@@ -10,13 +10,23 @@ const NavLinks = ({ menu }: { menu: string }) => {
       title: "Hvad vi tilbyder",
       path: "/ydelser",
     },
+
+    {
+      title: "Hvad vi har lavet",
+      path: "/cases",
+    },
+
+    {
+      title: "Kontakt",
+      path: "/",
+    },
   ];
 
   const activelink = usePathname();
 
   return (
     <div
-      className={`${menu} flex flex-col lg:flex-row gap-x-16 text-xl font-normal pt-[10vh] pb-16`}
+      className={`${menu} flex-col lg:flex-row gap-x-16 text-xl font-normal pt-[10vh] pb-16`}
     >
       {navlinks.map((navlink) => (
         <Link href={navlink.path} key={navlink.title} className='mb-4'>

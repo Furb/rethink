@@ -3,7 +3,7 @@ import { client } from "@/sanity/lib/client";
 import { Case } from "../../utils/interface";
 
 const getCases = async (limit = 12, orderBy = "_createdAt desc") => {
-  const query = `*[_type == "cases"] | order(${orderBy}) [0...${limit}]{_id, title, slug, undertitle, mainImage}`;
+  const query = `*[_type == "cases"] | order(${orderBy}) [0...${limit}]{_id, title, slug, undertitle, featuredImage}`;
   const data = await client.fetch(query);
   return data;
 };

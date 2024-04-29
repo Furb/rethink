@@ -20,7 +20,8 @@ export default function Home() {
           className='rounded-xl'
         />
       </div>
-      <Casegrid limit={2} orderBy={"desc"} />
+      <p className='text-primary mb-4 lg:hidden'>Udvalgte Cases</p>
+      <Casegrid limit={2} orderBy={"_createdAt desc"} />
 
       <section className='grid grid-cols-1 md:grid-cols-8 gap-16 max-md:mb-4 md:custom-space'>
         <div className='max-md:custom-space md:col-span-4 2xl:col-span-5'>
