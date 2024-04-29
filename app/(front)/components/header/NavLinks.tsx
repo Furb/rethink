@@ -26,7 +26,7 @@ const NavLinks = ({ menu }: { menu: string }) => {
 
   return (
     <div
-      className={`${menu} flex-col lg:flex-row gap-x-16 text-xl font-normal pt-[10vh] pb-16`}
+      className={`${menu} flex-col lg:flex-row gap-x-16 text-xl font-normal pt-[10vh] lg:pt-0 pb-16 lg:pb-0`}
     >
       {navlinks.map((navlink) => (
         <Link href={navlink.path} key={navlink.title} className='mb-4'>

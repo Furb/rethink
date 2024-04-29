@@ -10,7 +10,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className='py-6 wrap bg-white mb-24'>
+    <header className='py-10 lg:py-6 wrap bg-white mb-24'>
       <nav className='flex justify-between items-center'>
         <Link href='/'>
           <Image
