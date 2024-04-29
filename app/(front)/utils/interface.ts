@@ -26,9 +26,9 @@ export interface Case {
     asset: any;
     alt: string;
   };
-  formaal: string;
-  loesning: string;
-  resultat: string;
+  formaal: any;
+  loesning: any;
+  resultat: any;
 
   kategorier: Array<Kategori>;
   undertitle: string;

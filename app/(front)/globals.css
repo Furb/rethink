@@ -63,6 +63,14 @@
     @apply mb-4 block;
   }
 
+  .richText ul {
+    @apply list-disc ml-4 text-lg font-normal;
+  }
+
+  .richText ul li::marker {
+    @apply text-secondary text-2xl;
+  }
+
   .cards picture:nth-child(odd) {
     @apply md:mt-40 2xl:mt-60;
   }
