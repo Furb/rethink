@@ -42,7 +42,7 @@ const singleCase = async ({ params }: Params) => {
           <div className='lg:flex justify-between gap-8'>
             <div className='h4 mb-4'>Resultat</div>
             <div className='richText'>
-              <PortableText value={caseItem?.loesning || []} />
+              <PortableText value={caseItem?.resultat || []} />
             </div>
           </div>
         </div>
