@@ -3,7 +3,7 @@ import React from "react";
 
 const cases = async () => {
   return (
-    <main className='wrap md:grid grid-cols-8'>
+    <main className='page-wrap'>
       <div className='custom-space col-span-full'>
         <h1 className='text-primary'>
           Events med grønne <br /> kvalitative løsninger

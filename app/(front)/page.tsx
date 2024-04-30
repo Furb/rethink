@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className='wrap'>
+    <main className='page-wrap'>
       <div className='custom-space-small'>
         <p className='text-primary'>Rethink Event </p>
         <h1>Cirkulære forretningsmodeller</h1>

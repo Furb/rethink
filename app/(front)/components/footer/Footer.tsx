@@ -6,7 +6,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className='bg-dark pt-24 md:pt-48 pb-8 text-white wrap'>
-      <div id='footerTop' className='container custom-space-small'>
+      <div id='footerTop' className='page-wrap custom-space-small'>
         <div className='flex custom-space-small'>
           <h2 className='h1'>
             <span className='italic text-primary line-through'>Fremtidens</span>{" "}
@@ -59,10 +59,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div
-        id='bottomFooter'
-        className='w-full flex gap-8 justify-between container'
-      >
+      <div id='bottomFooter' className='flex gap-8 justify-between page-wrap'>
         <nav className='flex flex-col md:flex-row gap-8 lg:gap-24'>
           <Link href='/forretningsbetingelser'>
             <p className='text-xl hover:text-primary'>Forretningsbetingelser</p>

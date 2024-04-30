@@ -1,6 +1,8 @@
 import { client } from "@/sanity/lib/client";
 import { Case } from "../../utils/interface";
 import { PortableText } from "@portabletext/react";
+import { urlForImage } from "@/sanity/lib/image";
+import Image from "next/image";
 
 interface Params {
   params: {
@@ -17,12 +19,24 @@ const getCase = async (slug: string) => {
 
 const singleCase = async ({ params }: Params) => {
   const caseItem: Case = await getCase(params?.slug);
+  const imageUrl = urlForImage(caseItem?.featuredImage);
 
   return (
-    <main className='container'>
+    <main className='page-wrap'>
       <div>
         <p className='text-primary'>{caseItem?.title}</p>
         <h2 className='mb-16'>{caseItem?.undertitle}</h2>
+      </div>
+      <div
+        className=' 
+      image aspect-video relative custom-space md:mb-36 rounded-xl bg-primary'
+      >
+        <Image
+          src={imageUrl}
+          fill
+          alt={caseItem?.featuredImage.alt}
+          className='rounded-xl object-cover'
+        />
       </div>
 
       <section className='lg:grid grid-cols-12'>

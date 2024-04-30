@@ -14,7 +14,7 @@ const Ydelser = async () => {
   const ydelser: Ydelse[] = await getYdelser();
   console.log(ydelser);
   return (
-    <main className='wrap'>
+    <main className='page-wrap'>
       <div className='custom-space-small'>
         <h1 className='mb-4'>Som din eventpartner</h1>
         <h2>

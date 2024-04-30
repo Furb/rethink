@@ -19,7 +19,7 @@ const singleYdelse = async ({ params }: Params) => {
   const ydelse: Ydelse = await getYdelse(params?.slug);
 
   return (
-    <main className='wrap'>
+    <main className='page-wrap'>
       <div>
         <p className='text-primary'>{ydelse?.title}</p>
       </div>

@@ -79,6 +79,49 @@
     @apply md:mt-40 2xl:mt-60;
   }
 
+  /**
+   *
+   * COOOOL container hack from Kevin Powell
+   *
+   */
+
+  .page-wrap {
+    --padding-inline: 2rem;
+    --p-wrap-max-width: 96rem;
+    --breakout-max-width: 120rem;
+
+    --breakout-size: calc(
+      (var(--breakout-max-width) - var(--p-wrap-max-width)) / 2
+    );
+
+    @apply grid;
+    grid-template-columns:
+      [wide-start] minmax(var(--padding-inline), 1fr)
+      [breakout-start]minmax(0, var(--breakout-size))
+      [content-start] min(
+        100% - (var(--padding-inline) * 2),
+        var(--p-wrap-max-width)
+      )
+      [content-end]
+      minmax(0, var(--breakout-size)) [breakout-end]
+      minmax(var(--padding-inline), 1fr) [wide-end];
+  }
+
+  .page-wrap > :not(.breakout, .wide),
+  .wide > :not(.breakout, .wide) {
+    grid-column: content;
+  }
+
+  .page-wrap > .breakout {
+    grid-column: breakout;
+  }
+
+  .page-wrap > .wide {
+    grid-column: wide;
+    display: grid;
+    grid-template-columns: inherit;
+  }
+
   .wrap {
     @apply px-4 md:px-24 2xl:px-48;
   }

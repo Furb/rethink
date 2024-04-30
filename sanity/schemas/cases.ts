@@ -48,8 +48,8 @@ export const cases = {
     },
 
     {
-      name: "mainImage",
-      title: "Main Billede",
+      name: "caseHeaderMedia",
+      title: "Udvalgt Billede",
       type: "image",
       fields: [
         {
