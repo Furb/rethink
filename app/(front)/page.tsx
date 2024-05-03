@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Casegrid from "./components/cards/Casegrid";
 import Image from "next/image";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 export default function Home() {
   return (
