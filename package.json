@@ -17,6 +17,7 @@
     "next": "^14.2.0",
     "next-sanity": "^7.1.4",
     "react": "^18",
+    "react-cookiebot": "^1.0.10",
     "react-dom": "^18",
     "react-simple-typewriter": "^5.0.1",
     "sanity": "^3.39.1",
@@ -25,6 +26,7 @@
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
+    "@types/react-cookiebot": "^1.0.5",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",

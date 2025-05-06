@@ -20,7 +20,7 @@ const Casegrid = async ({
   const cases: Case[] = await getCases(limit, orderBy);
 
   return (
-    <section className='casegrid grid sm:grid-cols-2 gap-4 md:gap-8 2xl:gap-24 custom-space cards'>
+    <section className="casegrid grid sm:grid-cols-2 gap-4 md:gap-8 2xl:gap-24 custom-space cards">
       {cases?.length > 0 &&
         cases?.map((caseItem) => (
           <CaseCard case={caseItem} key={caseItem._id} />
