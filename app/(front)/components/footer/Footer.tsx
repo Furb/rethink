@@ -72,7 +72,7 @@ const Footer = () => {
           </Link>
 
           <Link href="Javascript: Cookiebot.renew()">
-            <p className="text-xl hover:text-primary">Privat politik</p>
+            <p className="text-xl hover:text-primary">Privatlivspolitik</p>
           </Link>
         </nav>
         <p className="text-lg self-end">CVR-NR: 35124616</p>
