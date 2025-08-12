@@ -224,7 +224,7 @@ const Forretningsbetingelser = () => {
               afgøres efter dansk ret med Retten i Århus som værneting.
             </p>
             <p className="mb-3">
-              Rethink Event v/Randel. Fredens Torv 8.2, 8000 Aarhus C
+              Rethink Event Fredens Torv 8.2, 8000 Aarhus C
             </p>
             <p>rethinkevent.dk | info@rethinkevent.dk | CVR nr. 3512 4616</p>
           </li>
